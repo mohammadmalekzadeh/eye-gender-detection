@@ -5,5 +5,5 @@ scikit-learn
 scikit-image
 matplotlib
 seaborn
-jupiter
+jupyter
 joblib
