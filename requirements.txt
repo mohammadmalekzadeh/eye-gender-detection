@@ -1,0 +1,9 @@
+numpy
+pandas
+opencv-python
+scikit-learn
+scikit-image
+matplotlib
+seaborn
+jupiter
+joblib
