@@ -28,13 +28,30 @@ The goal of this project is to build a gender classification model using only cr
 - Training involves splitting the data into training/testing sets, model fitting, and evaluation.
 
 ### 🔹 Outputs:
-- Trained model file saved as .joblib or .pkl.
-- Evaluation reports: accuracy, F1-score, and confusion matrix.
+- Trained model file saved as .pkl.
+- Evaluation reports: accuracy, F1-score, R2-score and etc.
 - Visual performance metrics and plots.
-- An interactive Jupyter Notebook (notebooks/eye_gender_pipeline.ipynb) containing the full pipeline.
+- An interactive Jupyter Notebook (eye_gender_pipeline.ipynb) containing the full pipeline.
 
-## 📌 Result Summary
+## 📌 How to Run the Program
+  1. **Clone the Repository**
+  ```bash
+      git clone https://github.com/mohammadmalekzadeh/eye-gender-detection.git
+      cd eye-gender-detection
+  ```
 
+  2. **Install Dependencies**
+  ```python
+      pip install -r requirements.txt
+  ```
+
+  3. **Run the Program**
+  ```python
+      python main.py
+  ```
+
+  _Finally, you can see the model results and make **prediction** on the test data_
+  _Share your suggestions with us_
 
 ## 🚀 Technologies Used
 ```bash
