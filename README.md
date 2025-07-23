@@ -41,7 +41,7 @@ The goal of this project is to build a gender classification model using only cr
 
     - NumPy
     - Pandas
-    - OpenCV
+    - Pillow
     - Scikit-Image
     - Scikit-learn
     - Joblib
