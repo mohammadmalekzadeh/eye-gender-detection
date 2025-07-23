@@ -29,7 +29,7 @@ The goal of this project is to build a gender classification model using only cr
 
 ### 🔹 Outputs:
 - Trained model file saved as .pkl.
-- Evaluation reports: accuracy, F1-score, R2-score and etc.
+- Evaluation reports: accuracy, F1-score, Recall and etc.
 - Visual performance metrics and plots.
 - An interactive Jupyter Notebook (eye_gender_pipeline.ipynb) containing the full pipeline.
 
