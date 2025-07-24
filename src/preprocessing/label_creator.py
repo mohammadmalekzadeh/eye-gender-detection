@@ -25,4 +25,4 @@ def label_creator() -> None:
     df.sort_values(by='num', ascending=True, inplace=True)
     df.drop(columns='num', inplace=True)
     df.to_csv(BASE_DIR+'/data/labels.csv', index=False)
-    return "[!] Images have been successfully labeled"
+    print(f"[!] Images label saved to {BASE_DIR+'/data/labels.csv'}")
