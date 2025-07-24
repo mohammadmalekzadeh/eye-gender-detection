@@ -13,13 +13,13 @@ def label_creator() -> None:
 
     ### labeling and save labels
     currect_gender = 'male'
-    currect_path = '../data/images/maleeyes/'
+    currect_path = BASE_DIR+'/data/images/maleeyes/'
     data = []
     for gender in [male_image, female_image]:
         for image in gender:
             data.append({'image_path': currect_path + image, 'gender': currect_gender})
         currect_gender = 'female'
-        currect_path = '../data/images/femaleeyes/'
+        currect_path = BASE_DIR+'/data/images/femaleeyes/'
     df = pd.DataFrame(data)
     df['num'] = df['image_path'].apply(lambda x : int(x.split('/')[-1].split('.')[0]))
     df.sort_values(by='num', ascending=True, inplace=True)
