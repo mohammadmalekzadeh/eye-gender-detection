@@ -75,17 +75,19 @@ salary-prediction/
 ├── data/
 │   ├── raw/
 │   ├── images/
-│   ├── true_values/
-│   ├── labels.csv
-│   └── processed/
+│   ├── processed/
+│   └── labels.csv
 ├── src/
 │   ├── model/
 │      ├── evaluate.py
 │      ├── save_load.py
 │      └── train.py
 │   ├── preprocessing/
+│      ├── image_processor.py
+│      ├── generate_dataset.py
 │      ├── label_creator.py
-│      └── extra_feature.py
+│      ├── raw_data_processing.py
+│      └── feature_extractor.py
 │   └── utlis.py
 ├── models/
 ├── outputs/
