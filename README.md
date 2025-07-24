@@ -74,6 +74,7 @@ The goal of this project is to build a gender classification model using only cr
 salary-prediction/
 ├── data/
 │   ├── raw/
+│   ├── images/
 │   ├── true_values/
 │   ├── labels.csv
 │   └── processed/
@@ -83,14 +84,15 @@ salary-prediction/
 │      ├── save_load.py
 │      └── train.py
 │   ├── preprocessing/
+│      ├── label_creator.py
 │      └── extra_feature.py
 │   └── utlis.py
 ├── models/
-├── notebooks/
-│   └── eye_gender_pipeline.ipynb
 ├── outputs/
 │   ├── reports/
 │   └── models/
+├── eye_gender_pipeline.ipynb
+├── main.py
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
