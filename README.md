@@ -49,6 +49,10 @@ The goal of this project is to build a gender classification model using only cr
   ```python
       python main.py
   ```
+      or
+  ```python
+      open eye_gender_pipeline.ipynb
+  ```
 
   _Finally, you can see the model results and make **prediction** on the test data_
   _Share your suggestions with us_
