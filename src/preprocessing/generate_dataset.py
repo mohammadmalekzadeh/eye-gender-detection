@@ -4,7 +4,7 @@ from src.preprocessing.feature_extractor import FeatureExtractor
 from src.preprocessing.image_processing import ImagePreprocessor
 from src.utlis import BASE_DIR
 
-def generate_dataset(output_raw=BASE_DIR+'/data/raw/processed_data.csv'):
+def generate_dataset(output_raw=BASE_DIR+'/data/raw/raw_data.csv'):
     labels_df = pd.read_csv(BASE_DIR+'/data/labels.csv')
     extractor = FeatureExtractor()
 
