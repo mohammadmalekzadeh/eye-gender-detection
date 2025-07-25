@@ -33,6 +33,7 @@ class DataProcessing():
 
     def train_test_split(self, df):
         train_df, test_df = train_test_split(df, test_size=self.test_size, random_state=self.random_state)
+        self.y_true = test_df['gender']
         test_df.drop(columns='gender', inplace=True)
 
         print('[!] Splitting of test and train data was done')
@@ -72,8 +73,9 @@ class DataProcessing():
     def save_dataset(self, train_df, test_df):
         train_df.to_csv(BASE_DIR+'/data/processed/train_df.csv', index=False)
         test_df.to_csv(BASE_DIR+'/data/processed/test_df.csv', index=False)
+        self.y_true.to_csv(BASE_DIR+'/data/true/y_true.csv', index=False)
 
-        print('[!] train_df and test_df Saved')
+        print('[!] train_df, test_df and y_true Saved')
 
     def transform(self):
         df = self.handling_missing_values(self.df)
