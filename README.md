@@ -49,7 +49,7 @@ The goal of this project is to build a gender classification model using only cr
   ```python
       python main.py
   ```
-      or
+  or  
   ```python
       open eye_gender_pipeline.ipynb
   ```
