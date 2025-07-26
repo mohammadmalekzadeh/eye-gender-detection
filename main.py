@@ -8,6 +8,7 @@ from src.preprocessing.raw_data_processing import DataProcessing
 from src.model.save_load import save
 from src.model.save_load import load
 from src.model.train import design_train_save_model
+from src.model.evaluate import select_best_model
 
 ### Preprocessing
 # create label dataset for images
@@ -17,3 +18,11 @@ generate_dataset()
 # data processing and split train test data
 data_processing = DataProcessing(n_components=100)
 data_processing.transform()
+
+### Model design and Model training
+# design, train and save models
+design_train_save_model()
+
+### Model evaluation and Choose best model
+# select best model
+select_best_model()
