@@ -9,6 +9,7 @@ from src.model.save_load import save
 from src.model.save_load import load
 from src.model.train import design_train_save_model
 from src.model.evaluate import select_best_model
+from src.model.prediction import prediction
 
 ### Preprocessing
 # create label dataset for images
@@ -26,3 +27,7 @@ design_train_save_model()
 ### Model evaluation and Choose best model
 # select best model
 select_best_model()
+
+### Prediction
+# prediction test dataframe
+prediction()
